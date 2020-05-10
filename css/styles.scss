@@ -80,7 +80,7 @@ h2{
         align-items: center;
 
         .myCard{
-            margin: 0 10px;
+            margin: 0 10px;  
             box-shadow: 5px 5px 20px 0px #00000075;
             border-radius: 10px;
             padding: 40px;
@@ -89,17 +89,16 @@ h2{
             flex-direction: column;
             justify-content: space-evenly;         
             text-align: center;
+            height: 300px;
 
-            &Ico{
-                height: 100px;       
+            &Ico{      
                 i{
                     color: $primaryPink;
                     font-size: 5em;
                 }
             }
 
-            &Tittle{ 
-                height: 40px;               
+            &Tittle{        
                 p{
                     font-size: 1.2em;
                     font-weight: 500;
@@ -107,8 +106,7 @@ h2{
                 }
             }
 
-            &Desc{ 
-                height: 40px;
+            &Desc{  
                 p{
                     font-size: 1em;
                     font-weight: 500;

@@ -191,10 +191,7 @@ h2 {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   text-align: center;
-}
-
-#mainFeaturesCards .row .myCardIco {
-  height: 100px;
+  height: 300px;
 }
 
 #mainFeaturesCards .row .myCardIco i {
@@ -202,18 +199,10 @@ h2 {
   font-size: 5em;
 }
 
-#mainFeaturesCards .row .myCardTittle {
-  height: 40px;
-}
-
 #mainFeaturesCards .row .myCardTittle p {
   font-size: 1.2em;
   font-weight: 500;
   color: #283049;
-}
-
-#mainFeaturesCards .row .myCardDesc {
-  height: 40px;
 }
 
 #mainFeaturesCards .row .myCardDesc p {
