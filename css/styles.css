@@ -1,0 +1,224 @@
+@charset "UTF-8";
+/* --
+CSS Reseter
+CSSLab � 2010 by Jorge Epu�an
+http://www.csslab.cl/2010/06/01/css-reseter-v2/
+-- */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, dialog, figure, header, footer, hgroup, menu, nav, section, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+}
+
+article, aside, nav, section, dialog, figure, header, footer, hgroup {
+  display: block;
+}
+
+legend {
+  display: none;
+}
+
+:focus {
+  outline: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+}
+
+a img, iframe {
+  border: none;
+}
+
+ul {
+  list-style: none;
+}
+
+input, textarea, select, button {
+  font-size: 100%;
+  font-family: inherit;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+select {
+  margin: inherit;
+}
+
+button {
+  border: 0;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+/* Fixes incorrect placement of numbers in ol's in IE6/7 */
+ol {
+  margin-left: 2em;
+}
+
+/* ========================================= clearfix == */
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.clearfix {
+  display: inline-block;
+}
+
+* html .clearfix {
+  height: 1%;
+}
+
+.clearfix {
+  display: block;
+}
+
+* {
+  font-family: 'Oxygen', sans-serif;
+  color: white;
+}
+
+#myNavBarStyle {
+  background-color: #283049 !important;
+  -webkit-box-shadow: 0px 10px 10px 0px #00000075;
+          box-shadow: 0px 10px 10px 0px #00000075;
+  padding: 2vh 5%;
+}
+
+#myNavBarStyle a {
+  color: white;
+}
+
+#myNavBarStyle #brand-logo {
+  font-family: 'Permanent Marker', cursive;
+  font-weight: 100;
+  font-size: 2em;
+}
+
+#myNavBarStyle #brand-logo img {
+  width: 80px;
+  padding: 0 10px;
+}
+
+#myNavBarStyle .nav-item {
+  margin: 0 2vw;
+}
+
+#myNavBarStyle #demoItem {
+  background-color: #ff6978;
+  padding: 0 10px;
+  border-radius: 20px;
+  -webkit-box-shadow: 5px 5px 5px 0px #00000075;
+          box-shadow: 5px 5px 5px 0px #00000075;
+}
+
+h1 {
+  font-size: 3em;
+  font-weight: 500;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: 500;
+  text-align: center;
+  color: #ff6978;
+}
+
+#bgMain {
+  margin-top: 10vh;
+  height: 90vh;
+  background-image: url("/img/200548.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position-x: center;
+}
+
+#bgMain .grayLayer {
+  background-color: rgba(1, 1, 26, 0.6);
+  width: 100%;
+  height: 100%;
+}
+
+#bgMain .grayLayer .row {
+  padding-top: 20vh;
+  height: 100%;
+}
+
+#mainFeaturesCards {
+  height: 100vh;
+}
+
+#mainFeaturesCards .row {
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#mainFeaturesCards .row .myCard {
+  margin: 0 10px;
+  -webkit-box-shadow: 5px 5px 20px 0px #00000075;
+          box-shadow: 5px 5px 20px 0px #00000075;
+  border-radius: 10px;
+  padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  text-align: center;
+}
+
+#mainFeaturesCards .row .myCardIco {
+  height: 100px;
+}
+
+#mainFeaturesCards .row .myCardIco i {
+  color: #ff6978;
+  font-size: 5em;
+}
+
+#mainFeaturesCards .row .myCardTittle {
+  height: 40px;
+}
+
+#mainFeaturesCards .row .myCardTittle p {
+  font-size: 1.2em;
+  font-weight: 500;
+  color: #283049;
+}
+
+#mainFeaturesCards .row .myCardDesc {
+  height: 40px;
+}
+
+#mainFeaturesCards .row .myCardDesc p {
+  font-size: 1em;
+  font-weight: 500;
+  color: #ff6978;
+}
+/*# sourceMappingURL=styles.css.map */

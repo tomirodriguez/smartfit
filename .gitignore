@@ -1,0 +1,5 @@
+# Ignorar la carpeta node_modules
+/node_modules
+
+# Ignorar todos los archivos con extension .json
+*.json
