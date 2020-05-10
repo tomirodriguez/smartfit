@@ -36,6 +36,12 @@ $primaryBlue: rgb(40, 48, 73);
         padding: 0 10px;
         border-radius: 20px;
         box-shadow: 5px 5px 5px 0px #00000075;
+        transition: all 0.3s;
+
+        &:hover{
+            transform: translateY(4px);
+            box-shadow: 1px 1px 1px 0px #00000075;
+        }
     }
 }
 

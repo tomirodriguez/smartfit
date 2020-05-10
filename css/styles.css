@@ -128,6 +128,15 @@ ol {
   border-radius: 20px;
   -webkit-box-shadow: 5px 5px 5px 0px #00000075;
           box-shadow: 5px 5px 5px 0px #00000075;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#myNavBarStyle #demoItem:hover {
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
+  -webkit-box-shadow: 1px 1px 1px 0px #00000075;
+          box-shadow: 1px 1px 1px 0px #00000075;
 }
 
 h1 {
