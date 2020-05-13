@@ -1,11 +1,41 @@
 $primaryPink: #ff6978;
 $primaryBlue: rgb(40, 48, 73);
+$mediumBreak: 768px;
+$largeBreak: 992px;
 
 @import "reset";
 
 *{
     font-family: 'Oxygen', sans-serif;
     color: white;
+}
+
+h1{
+    font-size: 3em;
+    font-weight: 500;
+    text-align: center; 
+}
+
+h2{
+    font-size: 2em;
+    font-weight: 500;
+    text-align: center;
+    color: $primaryPink;
+    text-shadow: 0 0 20px black;
+}
+
+h3{
+    font-size: 2em;
+    font-weight: 500;
+    text-align: center;
+    color: $primaryBlue;
+}
+
+h4{
+    font-size: 1.5em;
+    font-weight: 300;
+    text-align: center;
+    color: $primaryBlue;
 }
 
 #myNavBarStyle{
@@ -45,20 +75,6 @@ $primaryBlue: rgb(40, 48, 73);
     }
 }
 
-h1{
-    font-size: 3em;
-    font-weight: 500;
-    text-align: center; 
-}
-
-h2{
-    font-size: 2em;
-    font-weight: 500;
-    text-align: center;
-    color: $primaryPink;
-    text-shadow: 0 0 20px black;
-}
-
 #bgMain{
     margin-top: 10vh;
     height: 90vh;
@@ -80,17 +96,22 @@ h2{
 }
 
 #mainFeaturesCards{
-    height: 100vh;
-
+    padding: 80px 20px;
+    
+    h3, h4{
+        padding-bottom: 20px;
+    }
     .row{
-        height: 100%;
         align-items: center;
+    }
 
-        .myCard{
-            margin: 0 10px;  
+    #myCardsRow{
+        margin: 20px 10px;
+        .myCard{  
             box-shadow: 5px 5px 20px 0px #00000075;
             border-radius: 10px;
-            padding: 40px;
+            padding: 30px 20px;
+            margin: 20px 0px;
 
             display: flex;
             flex-direction: column;
@@ -128,4 +149,8 @@ h2{
             }
         }
     }
+}
+
+footer{
+    background-color: $primaryBlue;
 }
