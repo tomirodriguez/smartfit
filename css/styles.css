@@ -113,7 +113,7 @@ h2 {
 
 h3 {
   font-size: 2em;
-  font-weight: 500;
+  font-weight: 900;
   text-align: center;
   color: #283049;
 }
@@ -240,11 +240,12 @@ h4 {
   color: #ff6978;
 }
 
-footer {
-  background-color: #283049;
+#ourClients {
+  padding: 80px 20px;
 }
 
-footer .row {
+footer {
+  background-color: #283049;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -255,39 +256,32 @@ footer .row {
   padding: 30px 0px;
 }
 
-footer .row #footerLinks ul {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+footer #footerMobileDownload p {
+  font-size: 1em;
 }
 
-footer .row #footerLinks ul li {
-  padding: 10px 20px;
+footer #footerMobileDownload img {
+  width: 150px;
+  margin: 10px;
 }
 
-footer .row a {
-  color: white;
-  text-decoration: none;
-}
-
-footer .row .brandLogo {
+footer #footerLogo {
   font-family: 'Permanent Marker', cursive;
   font-weight: 100;
   font-size: 2em;
 }
 
-footer .row #footerSocialMediaLinks ul {
+footer #footerSocialMedia ul {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
-footer .row #footerSocialMediaLinks ul li {
+footer #footerSocialMedia ul li {
   padding: 20px;
+}
+
+footer #footerCopyright p {
+  font-size: 0.8em;
 }
 /*# sourceMappingURL=styles.css.map */

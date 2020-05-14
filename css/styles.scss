@@ -27,7 +27,7 @@ h2{
 
 h3{
     font-size: 2em;
-    font-weight: 500;
+    font-weight: 900;
     text-align: center;
     color: $primaryBlue;
 }
@@ -148,44 +148,46 @@ h4{
     }
 }
 
+#ourClients{
+    padding: 80px 20px;
+}
+
 footer{
     background-color: $primaryBlue;
+    
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 30px 0px;
 
-    .row{
-        align-items: center;
-        justify-content: space-evenly;
-        text-align: center;
-        padding: 30px 0px;
-
-        #footerLinks{
-            ul{
-                display: inline-flex;
-                justify-content: center;
-                flex-wrap: wrap;
-                li{
-                    padding: 10px 20px;
-                }
+    #footer{
+        &MobileDownload {
+            p{
+                font-size: 1em;
+            }
+            img{
+                width: 150px;
+                margin: 10px;
             }
         }
         
-        a{
-            color: white;
-            text-decoration: none;
-        }
-        
-        .brandLogo{
+        &Logo{
             font-family: 'Permanent Marker', cursive;
             font-weight: 100;
             font-size: 2em;
         }
         
-        #footerSocialMediaLinks{
+        &SocialMedia{
             ul{
                 display: inline-flex;
                 li{
                     padding: 20px
                 }
             }
+        }
+
+        &Copyright p{
+            font-size: 0.8em;
         }
     }
 }
