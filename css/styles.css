@@ -115,18 +115,18 @@ h3 {
   font-size: 2em;
   font-weight: 900;
   text-align: center;
-  color: #283049;
+  color: #292C2C;
 }
 
 h4 {
   font-size: 1.5em;
   font-weight: 300;
   text-align: center;
-  color: #283049;
+  color: #292C2C;
 }
 
 #myNavBarStyle {
-  background-color: #283049 !important;
+  background-color: #292C2C !important;
   -webkit-box-shadow: 0px 10px 10px 0px #00000075;
           box-shadow: 0px 10px 10px 0px #00000075;
   padding: 2vh 5%;
@@ -178,7 +178,7 @@ h4 {
 }
 
 #bgMain .grayLayer {
-  background-color: rgba(1, 1, 26, 0.6);
+  background-color: rgba(44, 44, 46, 0.6);
   width: 100%;
   height: 100%;
 }
@@ -236,7 +236,7 @@ h4 {
 #mainFeaturesCards #myCardsRow .myCardTittle p {
   font-size: 1.2em;
   font-weight: 500;
-  color: #283049;
+  color: #292C2C;
 }
 
 #mainFeaturesCards #myCardsRow .myCardDesc p {
@@ -250,7 +250,7 @@ h4 {
 }
 
 footer {
-  background-color: #283049;
+  background-color: #292C2C;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
