@@ -3,3 +3,6 @@
 
 # Ignorar todos los archivos con extension .json
 *.json
+
+reset.css.map
+reset.css

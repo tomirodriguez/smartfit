@@ -8,6 +8,7 @@ $largeBreak: 992px;
 *{
     font-family: 'Oxygen', sans-serif;
     color: white;
+    scroll-behavior: smooth;
 }
 
 h1{
@@ -50,11 +51,7 @@ h4{
     #brand-logo{
         font-family: 'Permanent Marker', cursive;
         font-weight: 100;
-        font-size: 2em;;
-        img {   
-            width: 80px;
-            padding: 0 10px;    
-        }
+        font-size: 2em;
     }
 
     .nav-item{
@@ -153,4 +150,42 @@ h4{
 
 footer{
     background-color: $primaryBlue;
+
+    .row{
+        align-items: center;
+        justify-content: space-evenly;
+        text-align: center;
+        padding: 30px 0px;
+
+        #footerLinks{
+            ul{
+                display: inline-flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                li{
+                    padding: 10px 20px;
+                }
+            }
+        }
+        
+        a{
+            color: white;
+            text-decoration: none;
+        }
+        
+        .brandLogo{
+            font-family: 'Permanent Marker', cursive;
+            font-weight: 100;
+            font-size: 2em;
+        }
+        
+        #footerSocialMediaLinks{
+            ul{
+                display: inline-flex;
+                li{
+                    padding: 20px
+                }
+            }
+        }
+    }
 }

@@ -94,6 +94,7 @@ ol {
 * {
   font-family: 'Oxygen', sans-serif;
   color: white;
+  scroll-behavior: smooth;
 }
 
 h1 {
@@ -139,11 +140,6 @@ h4 {
   font-family: 'Permanent Marker', cursive;
   font-weight: 100;
   font-size: 2em;
-}
-
-#myNavBarStyle #brand-logo img {
-  width: 80px;
-  padding: 0 10px;
 }
 
 #myNavBarStyle .nav-item {
@@ -246,5 +242,52 @@ h4 {
 
 footer {
   background-color: #283049;
+}
+
+footer .row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  text-align: center;
+  padding: 30px 0px;
+}
+
+footer .row #footerLinks ul {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+footer .row #footerLinks ul li {
+  padding: 10px 20px;
+}
+
+footer .row a {
+  color: white;
+  text-decoration: none;
+}
+
+footer .row .brandLogo {
+  font-family: 'Permanent Marker', cursive;
+  font-weight: 100;
+  font-size: 2em;
+}
+
+footer .row #footerSocialMediaLinks ul {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+footer .row #footerSocialMediaLinks ul li {
+  padding: 20px;
 }
 /*# sourceMappingURL=styles.css.map */
