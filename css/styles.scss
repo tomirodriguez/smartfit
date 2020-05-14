@@ -56,6 +56,13 @@ h4{
 
     .nav-item{
         margin: 0 2vw;
+
+        &:hover{
+            a{
+                color: $primaryPink;
+                font-weight: 700;
+            }
+        }
     }
 
     #demoItem{

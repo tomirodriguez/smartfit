@@ -146,6 +146,11 @@ h4 {
   margin: 0 2vw;
 }
 
+#myNavBarStyle .nav-item:hover a {
+  color: #ff6978;
+  font-weight: 700;
+}
+
 #myNavBarStyle #demoItem {
   background-color: #ff6978;
   padding: 0 10px;
