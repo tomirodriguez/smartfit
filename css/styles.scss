@@ -1,28 +1,38 @@
-$primaryPink: #faaf5a;
+$secondaryColor: #faaf5a;
 $primaryColor: #292C2C;
 $mediumBreak: 768px;
-$largeBreak: 992px;
+$largeBreak: 1440px;
 
 @import "reset";
 
 *{
-    font-family: 'Oxygen', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: white;
     scroll-behavior: smooth;
 }
 
 h1{
-    font-size: 3em;
-    font-weight: 500;
-    text-align: center; 
+    font-size: 4em;
+    font-weight: 700;
+    text-align: right;
+
+    @media screen and (max-width: $mediumBreak){
+        font-size: 9vw;
+        text-align: center;
+    }
 }
 
 h2{
-    font-size: 2em;
-    font-weight: 500;
-    text-align: center;
-    color: $primaryPink;
+    font-size: 1.7em;
+    font-weight: 700;
+    color: $secondaryColor;
     text-shadow: 0px 0px 10px black;
+    text-align: right;
+
+    @media screen and (max-width: $mediumBreak){
+        font-size: 4vw;
+        text-align: center;
+    }
 }
 
 h3{
@@ -39,6 +49,12 @@ h4{
     color: $primaryColor;
 }
 
+.brandLogo{    
+    font-family: 'Permanent Marker', cursive;
+    font-weight: 400;
+    font-size: 2em;
+}
+
 #myNavBarStyle{
     background-color: $primaryColor !important;
     box-shadow: 0px 10px 10px 0px #00000075;
@@ -48,19 +64,21 @@ h4{
         color: white;
     }
 
-    #brand-logo{
-        font-family: 'Permanent Marker', cursive;
-        font-weight: 100;
-        font-size: 2em;
-    }
+    // #brand-logo{
+    // }
 
     .nav-item{
-        margin: 0 2vw;
+        margin: 0 1.3vw;
+
+        @media screen and (min-width: $largeBreak) {
+            &{
+                margin: 0 3vw;
+            }
+        }
 
         &:hover{
             a{
-                color: $primaryPink;
-                font-weight: 700;
+                color: $secondaryColor;
             }
         }
     }
@@ -95,6 +113,14 @@ h4{
         .row{
             padding-top: 20vh;
             height: 100%;
+
+            h1,h2 {
+                // text-align: right;
+
+                strong{
+                    color: $secondaryColor;
+                }
+            }
         }
     }
 }
@@ -131,7 +157,7 @@ h4{
 
             &Ico{      
                 i{
-                    color: $primaryPink;
+                    color: $secondaryColor;
                     font-size: 5em;
                 }
             }
@@ -148,7 +174,7 @@ h4{
                 p{
                     font-size: 1em;
                     font-weight: 500;
-                    color: $primaryPink;   
+                    color: $secondaryColor;   
                 }              
             }
         }
@@ -178,17 +204,15 @@ footer{
             }
         }
         
-        &Logo{
-            font-family: 'Permanent Marker', cursive;
-            font-weight: 100;
-            font-size: 2em;
-        }
-        
         &SocialMedia{
             ul{
                 display: inline-flex;
                 li{
-                    padding: 20px
+                    padding: 20px;
+                    
+                    &:hover i{
+                        color: $secondaryColor;
+                    }
                 }
             }
         }
