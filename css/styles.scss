@@ -115,7 +115,11 @@ h4{
             height: 100%;
 
             h1,h2 {
-                // text-align: right;
+                margin: 30px 4vw;
+
+                @media screen and (max-width: $mediumBreak){
+                    margin: 30px 0px;
+                }
 
                 strong{
                     color: $secondaryColor;

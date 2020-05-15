@@ -207,6 +207,16 @@ h4 {
   height: 100%;
 }
 
+#bgMain .grayLayer .row h1, #bgMain .grayLayer .row h2 {
+  margin: 30px 4vw;
+}
+
+@media screen and (max-width: 768px) {
+  #bgMain .grayLayer .row h1, #bgMain .grayLayer .row h2 {
+    margin: 30px 0px;
+  }
+}
+
 #bgMain .grayLayer .row h1 strong, #bgMain .grayLayer .row h2 strong {
   color: #faaf5a;
 }
