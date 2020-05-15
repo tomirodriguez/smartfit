@@ -349,11 +349,8 @@ h4 {
   }
 }
 
-#ourClients #clientsLogosRow .clientView .clientLogoContainer {
+#ourClients #clientsLogosRow .clientView img {
   height: 150px;
-}
-
-#ourClients #clientsLogosRow .clientView .clientLogoContainer img {
   width: 150px;
 }
 
