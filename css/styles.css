@@ -290,10 +290,36 @@ h4 {
 }
 
 #ourClients {
+  background-image: url("../img/200458.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position-x: center;
+  padding: 0px;
+}
+
+@media screen and (max-width: 768px) {
+  #ourClients {
+    background-image: url("../img/200458.jpg");
+    background-attachment: scroll;
+  }
+}
+
+#ourClients .darkLayer {
   padding: 80px 20px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: rgba(29, 29, 29, 0.8);
+  width: 100%;
+  height: 100%;
+}
+
+#ourClients .darkLayer h3 {
+  color: #faaf5a;
+}
+
+#ourClients .darkLayer h4 {
+  color: white;
 }
 
 #ourClients #clientsLogosRow {
@@ -331,27 +357,11 @@ h4 {
   width: 150px;
 }
 
-#ourClients #clientsLogosRow .clientView:hover .clientName {
-  background-color: #292C2C;
-}
-
-@media screen and (max-width: 768px) {
-  #ourClients #clientsLogosRow .clientView:hover .clientName {
-    background-color: white;
-  }
-}
-
 #ourClients #clientsLogosRow .clientView .clientName {
   padding: 5px;
   margin-top: 10px;
   border-radius: 10px;
   text-align: center;
-}
-
-@media screen and (max-width: 768px) {
-  #ourClients #clientsLogosRow .clientView .clientName p {
-    color: #292C2C;
-  }
 }
 
 footer {
