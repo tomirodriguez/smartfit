@@ -196,6 +196,12 @@ h4 {
   background-position-x: center;
 }
 
+@media screen and (max-width: 768px) {
+  #bgMain {
+    background-attachment: scroll;
+  }
+}
+
 #bgMain .grayLayer {
   background-color: rgba(0, 0, 0, 0.3);
   width: 100%;
