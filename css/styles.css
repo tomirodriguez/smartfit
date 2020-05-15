@@ -103,6 +103,10 @@ h1 {
   text-align: right;
 }
 
+h1 strong {
+  text-shadow: 0px 0px 10px black;
+}
+
 @media screen and (max-width: 768px) {
   h1 {
     font-size: 9vw;
@@ -287,6 +291,67 @@ h4 {
 
 #ourClients {
   padding: 80px 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#ourClients #clientsLogosRow {
+  margin: 50px 50px 10px 50px;
+}
+
+#ourClients #clientsLogosRow .clientView {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+@media screen and (max-width: 768px) {
+  #ourClients #clientsLogosRow .clientView {
+    margin: 30px 0;
+    padding: 20px 0;
+  }
+}
+
+#ourClients #clientsLogosRow .clientView .clientLogoContainer {
+  height: 150px;
+}
+
+#ourClients #clientsLogosRow .clientView .clientLogoContainer img {
+  width: 150px;
+}
+
+#ourClients #clientsLogosRow .clientView:hover .clientName {
+  background-color: #292C2C;
+}
+
+@media screen and (max-width: 768px) {
+  #ourClients #clientsLogosRow .clientView:hover .clientName {
+    background-color: white;
+  }
+}
+
+#ourClients #clientsLogosRow .clientView .clientName {
+  padding: 5px;
+  margin-top: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  #ourClients #clientsLogosRow .clientView .clientName p {
+    color: #292C2C;
+  }
 }
 
 footer {
