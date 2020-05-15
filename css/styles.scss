@@ -106,6 +106,7 @@ h4{
     background-position-x: center;
 
     @media screen and (max-width: $mediumBreak){
+        background-image: url("../img/223mobile.jpg");
         background-attachment: scroll;
     }
 

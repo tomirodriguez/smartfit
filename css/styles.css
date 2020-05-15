@@ -198,6 +198,7 @@ h4 {
 
 @media screen and (max-width: 768px) {
   #bgMain {
+    background-image: url("../img/223mobile.jpg");
     background-attachment: scroll;
   }
 }
