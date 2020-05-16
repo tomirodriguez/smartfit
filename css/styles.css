@@ -222,9 +222,9 @@ h4 {
 #bgMain .bgMainLayer {
   background-color: rgba(0, 0, 0, 0.3);
   height: 100%;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  padding-bottom: 35px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #bgMain .bgMainLayer .showMobile {

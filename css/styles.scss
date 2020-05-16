@@ -130,8 +130,8 @@ h4{
     .bgMainLayer {
         background-color: rgba(0, 0, 0, 0.3);
         height: 100%;
-        align-content: center;
-        padding-bottom: $navBarHeight/2;
+        align-items: center;
+        // padding-bottom: $navBarHeight/2;
         
         .showMobile{
             display: none;
