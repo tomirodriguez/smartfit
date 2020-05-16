@@ -126,7 +126,7 @@ h1 strong {
 
 h2 {
   font-size: 1.7em;
-  font-weight: 700;
+  font-weight: 400;
   text-shadow: 0px 0px 10px black;
   text-align: center;
   margin: 0px;
@@ -135,6 +135,10 @@ h2 {
 h2 p {
   font-family: 'Oswald', sans-serif;
   color: white;
+}
+
+h2 strong {
+  color: #faaf5a;
 }
 
 h3 {
@@ -221,6 +225,22 @@ h4 {
   -ms-flex-line-pack: center;
       align-content: center;
   padding-bottom: 35px;
+}
+
+#bgMain .bgMainLayer .showMobile {
+  display: none;
+}
+
+@media screen and (max-width: 576px) {
+  #bgMain .bgMainLayer .showMobile {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #bgMain .bgMainLayer .hideMobile {
+    display: none;
+  }
 }
 
 #mainFeaturesCards {

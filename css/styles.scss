@@ -1,5 +1,6 @@
 $secondaryColor: #faaf5a;
 $primaryColor: #292C2C;
+$smallBreak: 576px;
 $mediumBreak: 768px;
 $largeBreak: 1440px;
 $navBarHeight: 70px;
@@ -8,8 +9,8 @@ $navBarHeight: 70px;
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&display=swap');
 
 // Funcion para agregar propiedades responsive para mobile a elementos
-@mixin propertiesForMobile($propertiesMap){
-    @media screen and (max-width:$mediumBreak){
+@mixin propertiesForMaxWidth($width, $propertiesMap){
+    @media screen and (max-width:$width){
         @each $property, $value in $propertiesMap {
             #{$property} : $value;
         }
@@ -36,12 +37,11 @@ h1{
     strong{
         color: $secondaryColor;
     }
-    // @include propertiesForMobile(("font-size": 4vw, "text-align": center ))
 }
 
 h2{
     font-size: 1.7em;
-    font-weight: 700;
+    font-weight: 400;
     text-shadow: 0px 0px 10px black;
     text-align: center;
     margin: 0px;
@@ -49,8 +49,11 @@ h2{
         font-family: 'Oswald', sans-serif;
         color: white;
     }
-    // @include propertiesForMobile(("font-size": 4vw, "text-align": center ))
+    strong{
+        color: $secondaryColor;
+    }
 }
+
 
 h3{
     font-size: 2em;
@@ -113,8 +116,6 @@ h4{
 }
 
 #bgMain{
-    // padding-top: 70px;
-
     height: 100vh;
     background-image: url("../img/223alt.jpg");
     background-attachment: fixed;
@@ -122,7 +123,7 @@ h4{
     background-position-x: center;
 
     // Para mobile carga una imagen mas liviana 
-    @include propertiesForMobile(
+    @include propertiesForMaxWidth($mediumBreak,
         ("background-image": url("../img/223mobile.jpg"),
         "background-attachment": scroll));
 
@@ -131,6 +132,15 @@ h4{
         height: 100%;
         align-content: center;
         padding-bottom: $navBarHeight/2;
+        
+        .showMobile{
+            display: none;
+            @include propertiesForMaxWidth($smallBreak, ("display": block))
+        }
+
+        .hideMobile {
+            @include propertiesForMaxWidth($smallBreak, ("display": none))
+        }
     }
 }
 
@@ -197,7 +207,7 @@ h4{
     background-position-x: center;
     padding: 0px;
 
-    @include propertiesForMobile(
+    @include propertiesForMaxWidth($mediumBreak, 
         ("background-image": url("../img/200458.jpg"),
         "background-attachment": scroll));
 
@@ -225,8 +235,8 @@ h4{
             align-items: center;
             justify-content: end;
 
-            @include propertiesForMobile((
-                "margin":30px 0,
+            @include propertiesForMaxWidth($mediumBreak, 
+                ("margin":30px 0,
                 "padding": 20px 0));
 
                 
