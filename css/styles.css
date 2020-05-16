@@ -201,7 +201,6 @@ h4 {
 }
 
 #bgMain {
-  padding-top: 70px;
   height: 100vh;
   background-image: url("../img/223alt.jpg");
   background-attachment: fixed;
@@ -221,6 +220,7 @@ h4 {
   height: 100%;
   -ms-flex-line-pack: center;
       align-content: center;
+  padding-bottom: 35px;
 }
 
 #mainFeaturesCards {
