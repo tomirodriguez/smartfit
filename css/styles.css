@@ -4,8 +4,9 @@ CSS Reseter
 CSSLab � 2010 by Jorge Epu�an
 http://www.csslab.cl/2010/06/01/css-reseter-v2/
 -- */
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&display=swap");
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, dialog, figure, header, footer, hgroup, menu, nav, section, time, mark, audio, video {
+article, aside, dialog, figure, header, footer, hgroup, menu, nav, section, time, mark, audio, video, .container-fluid, .row {
   margin: 0;
   padding: 0;
   border: 0;
@@ -91,42 +92,42 @@ ol {
   display: block;
 }
 
-* {
+body {
   font-family: 'Open Sans', sans-serif;
-  color: white;
   scroll-behavior: smooth;
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 4em;
   font-weight: 700;
-  text-align: right;
-}
-
-h1 strong {
+  text-align: center;
   text-shadow: 0px 0px 10px black;
 }
 
-@media screen and (max-width: 768px) {
-  h1 {
-    font-size: 9vw;
-    text-align: center;
-  }
+h1 p {
+  font-family: 'Oswald', sans-serif;
+  color: white;
+}
+
+h1 .letterSpace {
+  letter-spacing: 3px;
+}
+
+h1 strong {
+  color: #faaf5a;
 }
 
 h2 {
   font-size: 1.7em;
   font-weight: 700;
-  color: #faaf5a;
   text-shadow: 0px 0px 10px black;
-  text-align: right;
+  text-align: center;
+  margin: 0px;
 }
 
-@media screen and (max-width: 768px) {
-  h2 {
-    font-size: 4vw;
-    text-align: center;
-  }
+h2 p {
+  font-family: 'Oswald', sans-serif;
+  color: white;
 }
 
 h3 {
@@ -154,6 +155,7 @@ h4 {
   -webkit-box-shadow: 0px 10px 10px 0px #00000075;
           box-shadow: 0px 10px 10px 0px #00000075;
   padding: 2vh 5%;
+  height: 70px;
 }
 
 #myNavBarStyle a {
@@ -192,8 +194,8 @@ h4 {
 }
 
 #bgMain {
-  margin-top: 10vh;
-  height: 90vh;
+  padding-top: 70px;
+  height: 100vh;
   background-image: url("../img/223alt.jpg");
   background-attachment: fixed;
   background-size: cover;
@@ -207,29 +209,11 @@ h4 {
   }
 }
 
-#bgMain .grayLayer {
+#bgMain .bgMainLayer {
   background-color: rgba(0, 0, 0, 0.3);
-  width: 100%;
   height: 100%;
-}
-
-#bgMain .grayLayer .row {
-  padding-top: 20vh;
-  height: 100%;
-}
-
-#bgMain .grayLayer .row h1, #bgMain .grayLayer .row h2 {
-  margin: 30px 4vw;
-}
-
-@media screen and (max-width: 768px) {
-  #bgMain .grayLayer .row h1, #bgMain .grayLayer .row h2 {
-    margin: 30px 0px;
-  }
-}
-
-#bgMain .grayLayer .row h1 strong, #bgMain .grayLayer .row h2 strong {
-  color: #faaf5a;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 #mainFeaturesCards {
@@ -390,6 +374,14 @@ footer #footerSocialMedia ul {
 
 footer #footerSocialMedia ul li {
   padding: 20px;
+}
+
+footer #footerSocialMedia ul li i {
+  color: white;
+}
+
+footer #footerSocialMedia ul li:hover {
+  cursor: pointer;
 }
 
 footer #footerSocialMedia ul li:hover i {
