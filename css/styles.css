@@ -6,7 +6,7 @@ http://www.csslab.cl/2010/06/01/css-reseter-v2/
 -- */
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&display=swap");
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, dialog, figure, header, footer, hgroup, menu, nav, section, time, mark, audio, video, .container-fluid, .row {
+article, aside, dialog, figure, header, footer, hgroup, menu, nav, section, time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -14,6 +14,13 @@ article, aside, dialog, figure, header, footer, hgroup, menu, nav, section, time
   font-weight: inherit;
   font-style: inherit;
   font-size: 100%;
+}
+
+.container-fluid, .row {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 article, aside, nav, section, dialog, figure, header, footer, hgroup {
@@ -345,6 +352,10 @@ h4 {
   text-align: center;
 }
 
+#ourClients #clientsLogosRow .clientView .clientName p {
+  color: white;
+}
+
 footer {
   background-color: #292C2C;
   -webkit-box-align: center;
@@ -355,6 +366,7 @@ footer {
           justify-content: space-evenly;
   text-align: center;
   padding: 30px 0px;
+  color: white;
 }
 
 footer #footerMobileDownload p {
