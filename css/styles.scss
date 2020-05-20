@@ -57,7 +57,6 @@ h2{
     }
 }
 
-
 h3{
     font-size: 2em;
     font-weight: 900;
@@ -70,6 +69,10 @@ h4{
     font-weight: 400;
     text-align: center;
     color: $primaryColor;
+    
+    strong{
+        color: $secondaryColor;
+    }
 }
 
 .brandLogo{    
@@ -118,6 +121,14 @@ h4{
     }
 }
 
+main{
+    margin-top: $navBarHeight;
+}
+
+#mainSectionPricing{
+    padding: 50px 0;
+}
+
 #bgMain{
     height: 100vh;
     background-image: url("../img/223alt.jpg");
@@ -134,7 +145,7 @@ h4{
         background-color: rgba(0, 0, 0, 0.3);
         height: 100%;
         align-items: center;
-        // padding-bottom: $navBarHeight/2;
+        padding-bottom: $navBarHeight/2;
         
         .showMobile{
             display: none;
@@ -172,10 +183,6 @@ h4{
             height: 300px;
             
             transition: all 0.3s;
-
-            &:hover{
-                
-            }
 
             &Ico{      
                 i{
@@ -256,6 +263,74 @@ h4{
                 p{
                     color: white; 
                 }      
+            }
+        }
+    }
+}
+
+#mainSectionPricing{
+    padding: 80px 20px;
+    #pricingCardsRow{
+        text-align: center;
+        margin-top: 30px;
+
+        .col-md-4{
+            padding: 0px 10px;
+        }
+
+        .pricingCardCost{
+            font-size: 2em;
+
+            .pricingCardCostFreeTrial{
+                font-size: 0.5em;
+            }
+            padding: 20px 0px;
+        }
+
+        .pricingCard{
+            box-shadow: 5px 5px 20px 0px #00000075;
+            border-radius: 10px;
+            padding: 30px 20px;
+            margin: 20px 0px;
+
+            .pricingCardFeatures{
+                text-align: left;
+                li{
+                    margin: 10px 0;
+                    font-weight: normal;
+
+                    strong{
+                        text-shadow: 0.5px 0.5px 2px $secondaryColor;
+                    }
+
+                    &::before{
+                        content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+                        color: $secondaryColor; /* Change the color */
+                        font-weight: bold; /* If you want it to be bold */
+                        display: inline-block; /* Needed to add space between the bullet and the text */
+                        width: 1.5em; /* Also needed for space (tweak if needed) */
+                        margin-left: 0em; /* Also needed for space (tweak if needed) */
+                    }
+                }
+            }
+
+            .pricingCardCostPurchase{
+                margin-top: 30px;
+                a{            
+                    position: relative;        
+                    background-color: $secondaryColor;
+                    padding: 10px 30px;
+                    border-radius: 20px;
+                    box-shadow: 1px 1px 5px 0px #00000075;
+                    transition: all 0.3s;
+                    text-decoration: none;
+                    color: white;
+                
+                    &:hover{
+                        transform: translateY(4px);
+                        box-shadow: 0.5px 0.5px 1px 0px #00000075;
+                    }
+                }
             }
         }
     }

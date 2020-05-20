@@ -158,6 +158,10 @@ h4 {
   color: #292C2C;
 }
 
+h4 strong {
+  color: #faaf5a;
+}
+
 .brandLogo {
   font-family: 'Permanent Marker', cursive;
   font-weight: 400;
@@ -207,6 +211,14 @@ h4 {
           box-shadow: 1px 1px 1px 0px #00000075;
 }
 
+main {
+  margin-top: 70px;
+}
+
+#mainSectionPricing {
+  padding: 50px 0;
+}
+
 #bgMain {
   height: 100vh;
   background-image: url("../img/223alt.jpg");
@@ -228,6 +240,7 @@ h4 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-bottom: 35px;
 }
 
 #bgMain .bgMainLayer .showMobile {
@@ -377,6 +390,88 @@ h4 {
 
 #ourClients #clientsLogosRow .clientView .clientName p {
   color: white;
+}
+
+#mainSectionPricing {
+  padding: 80px 20px;
+}
+
+#mainSectionPricing #pricingCardsRow {
+  text-align: center;
+  margin-top: 30px;
+}
+
+#mainSectionPricing #pricingCardsRow .col-md-4 {
+  padding: 0px 10px;
+}
+
+#mainSectionPricing #pricingCardsRow .pricingCardCost {
+  font-size: 2em;
+  padding: 20px 0px;
+}
+
+#mainSectionPricing #pricingCardsRow .pricingCardCost .pricingCardCostFreeTrial {
+  font-size: 0.5em;
+}
+
+#mainSectionPricing #pricingCardsRow .pricingCard {
+  -webkit-box-shadow: 5px 5px 20px 0px #00000075;
+          box-shadow: 5px 5px 20px 0px #00000075;
+  border-radius: 10px;
+  padding: 30px 20px;
+  margin: 20px 0px;
+}
+
+#mainSectionPricing #pricingCardsRow .pricingCard .pricingCardFeatures {
+  text-align: left;
+}
+
+#mainSectionPricing #pricingCardsRow .pricingCard .pricingCardFeatures li {
+  margin: 10px 0;
+  font-weight: normal;
+}
+
+#mainSectionPricing #pricingCardsRow .pricingCard .pricingCardFeatures li strong {
+  text-shadow: 0.5px 0.5px 2px #faaf5a;
+}
+
+#mainSectionPricing #pricingCardsRow .pricingCard .pricingCardFeatures li::before {
+  content: "\2022";
+  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #faaf5a;
+  /* Change the color */
+  font-weight: bold;
+  /* If you want it to be bold */
+  display: inline-block;
+  /* Needed to add space between the bullet and the text */
+  width: 1.5em;
+  /* Also needed for space (tweak if needed) */
+  margin-left: 0em;
+  /* Also needed for space (tweak if needed) */
+}
+
+#mainSectionPricing #pricingCardsRow .pricingCard .pricingCardCostPurchase {
+  margin-top: 30px;
+}
+
+#mainSectionPricing #pricingCardsRow .pricingCard .pricingCardCostPurchase a {
+  position: relative;
+  background-color: #faaf5a;
+  padding: 10px 30px;
+  border-radius: 20px;
+  -webkit-box-shadow: 1px 1px 5px 0px #00000075;
+          box-shadow: 1px 1px 5px 0px #00000075;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-decoration: none;
+  color: white;
+}
+
+#mainSectionPricing #pricingCardsRow .pricingCard .pricingCardCostPurchase a:hover {
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
+  -webkit-box-shadow: 0.5px 0.5px 1px 0px #00000075;
+          box-shadow: 0.5px 0.5px 1px 0px #00000075;
 }
 
 footer {
