@@ -405,15 +405,6 @@ main {
   padding: 0px 10px;
 }
 
-#mainSectionPricing #pricingCardsRow .pricingCardCost {
-  font-size: 2em;
-  padding: 20px 0px;
-}
-
-#mainSectionPricing #pricingCardsRow .pricingCardCost .pricingCardCostFreeTrial {
-  font-size: 0.5em;
-}
-
 #mainSectionPricing #pricingCardsRow .pricingCard {
   -webkit-box-shadow: 5px 5px 20px 0px #00000075;
           box-shadow: 5px 5px 20px 0px #00000075;
@@ -422,8 +413,22 @@ main {
   margin: 20px 0px;
 }
 
+#mainSectionPricing #pricingCardsRow .pricingCard .pricingCardTitle {
+  font-size: 2.5em;
+  font-weight: bolder;
+}
+
+#mainSectionPricing #pricingCardsRow .pricingCard .pricingCardCost {
+  font-size: 1.7em;
+}
+
+#mainSectionPricing #pricingCardsRow .pricingCard .pricingCardCost .pricingCardCostFreeTrial {
+  font-size: 0.5em;
+}
+
 #mainSectionPricing #pricingCardsRow .pricingCard .pricingCardFeatures {
   text-align: left;
+  margin-top: 20px;
 }
 
 #mainSectionPricing #pricingCardsRow .pricingCard .pricingCardFeatures li {
@@ -450,11 +455,11 @@ main {
   /* Also needed for space (tweak if needed) */
 }
 
-#mainSectionPricing #pricingCardsRow .pricingCard .pricingCardCostPurchase {
+#mainSectionPricing #pricingCardsRow .pricingCard .pricingCardPurchase {
   margin-top: 30px;
 }
 
-#mainSectionPricing #pricingCardsRow .pricingCard .pricingCardCostPurchase a {
+#mainSectionPricing #pricingCardsRow .pricingCard .pricingCardPurchase a {
   position: relative;
   background-color: #faaf5a;
   padding: 10px 30px;
@@ -467,7 +472,7 @@ main {
   color: white;
 }
 
-#mainSectionPricing #pricingCardsRow .pricingCard .pricingCardCostPurchase a:hover {
+#mainSectionPricing #pricingCardsRow .pricingCard .pricingCardPurchase a:hover {
   -webkit-transform: translateY(4px);
           transform: translateY(4px);
   -webkit-box-shadow: 0.5px 0.5px 1px 0px #00000075;

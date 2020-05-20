@@ -278,23 +278,28 @@ main{
             padding: 0px 10px;
         }
 
-        .pricingCardCost{
-            font-size: 2em;
-
-            .pricingCardCostFreeTrial{
-                font-size: 0.5em;
-            }
-            padding: 20px 0px;
-        }
-
         .pricingCard{
             box-shadow: 5px 5px 20px 0px #00000075;
             border-radius: 10px;
             padding: 30px 20px;
             margin: 20px 0px;
 
+            .pricingCardTitle{
+                font-size: 2.5em;
+                font-weight: bolder;
+            }
+
+            .pricingCardCost{
+                font-size: 1.7em;
+
+                .pricingCardCostFreeTrial{
+                    font-size: 0.5em;
+                }
+            }
+
             .pricingCardFeatures{
                 text-align: left;
+                margin-top: 20px;
                 li{
                     margin: 10px 0;
                     font-weight: normal;
@@ -314,7 +319,7 @@ main{
                 }
             }
 
-            .pricingCardCostPurchase{
+            .pricingCardPurchase{
                 margin-top: 30px;
                 a{            
                     position: relative;        
