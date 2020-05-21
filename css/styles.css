@@ -99,6 +99,32 @@ ol {
   display: block;
 }
 
+@-webkit-keyframes upDownAnimation {
+  50% {
+    bottom: -25px;
+  }
+}
+
+@keyframes upDownAnimation {
+  50% {
+    bottom: -25px;
+  }
+}
+
+.downArrowIcon {
+  color: #faaf5a;
+  text-align: center;
+  font-size: 2.5em;
+  position: relative;
+  bottom: 0px;
+  -webkit-animation-name: upDownAnimation;
+          animation-name: upDownAnimation;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
 * {
   scroll-behavior: smooth;
 }
@@ -263,6 +289,11 @@ main {
   #indexMainBg .hideMobile {
     display: none;
   }
+}
+
+#indexMainBg #indexDownArrows {
+  bottom: 0px;
+  right: -50%;
 }
 
 #mainFeaturesCards {
@@ -499,29 +530,7 @@ main {
 }
 
 #aboutusMainbg .row #aboutUsDownArrows {
-  color: #faaf5a;
-  text-align: center;
-  font-size: 2.5em;
-  position: relative;
   bottom: 0px;
-  -webkit-animation-name: upDownAnimation;
-          animation-name: upDownAnimation;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-}
-
-@-webkit-keyframes upDownAnimation {
-  50% {
-    bottom: -25px;
-  }
-}
-
-@keyframes upDownAnimation {
-  50% {
-    bottom: -25px;
-  }
 }
 
 #aboutUsHistorySection {

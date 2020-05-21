@@ -17,6 +17,21 @@ $navBarHeight: 70px;
     }
 }
 
+@keyframes upDownAnimation {
+    50%     {bottom: -25px;}
+}
+
+.downArrowIcon{
+    color: $secondaryColor;
+    text-align: center;
+    font-size:2.5em;
+    position: relative;
+    bottom: 0px;
+    animation-name: upDownAnimation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
 *{
     scroll-behavior: smooth;
 }
@@ -159,6 +174,11 @@ main{
 
     .hideMobile {
         @include propertiesForMaxWidth($smallBreak, ("display": none))
+    }
+
+    #indexDownArrows{
+        bottom: 0px;
+        right: -50%;
     }
 }
 
@@ -355,19 +375,8 @@ main{
         align-items: flex-end;
 
         #aboutUsDownArrows{
-            color: $secondaryColor;
-            text-align: center;
-            font-size:2.5em;
-            position: relative;
             bottom: 0px;
-            animation-name: upDownAnimation;
-            animation-duration: 1s;
-            animation-iteration-count: infinite;
         }
-
-        @keyframes upDownAnimation {
-            50%     {bottom: -25px;}
-          }
     }
 }
 
