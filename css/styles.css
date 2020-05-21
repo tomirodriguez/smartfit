@@ -133,6 +133,10 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+main {
+  padding-top: 70px;
+}
+
 h1 {
   font-size: 4em;
   font-weight: 700;
@@ -235,10 +239,6 @@ h4 strong {
           transform: translateY(4px);
   -webkit-box-shadow: 1px 1px 1px 0px #00000075;
           box-shadow: 1px 1px 1px 0px #00000075;
-}
-
-main {
-  padding-top: 70px;
 }
 
 .fullVhBgImage {
@@ -544,6 +544,11 @@ main {
 #aboutUsHistorySection p {
   text-align: justify;
   padding: 10px 30px;
+}
+
+#aboutUsHistorySection p strong {
+  color: #faaf5a;
+  font-weight: 900;
 }
 
 #aboutUsHistorySection .historyImg {
