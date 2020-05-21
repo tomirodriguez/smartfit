@@ -212,49 +212,50 @@ h4 strong {
 }
 
 main {
-  margin-top: 70px;
+  padding-top: 70px;
 }
 
-#mainSectionPricing {
-  padding: 50px 0;
-}
-
-#bgMain {
+.fullVhBgImage {
   height: 100vh;
-  background-image: url("../img/223alt.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-position-x: center;
 }
 
+.fullVhBgImage .bgDarkLayer {
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100%;
+}
+
+#indexMainBg {
+  background-image: url("../img/indexbg.jpg");
+}
+
 @media screen and (max-width: 768px) {
-  #bgMain {
-    background-image: url("../img/223mobile.jpg");
+  #indexMainBg {
+    background-image: url("../img/indexbgmobile.jpg");
     background-attachment: scroll;
   }
 }
 
-#bgMain .bgMainLayer {
-  background-color: rgba(0, 0, 0, 0.3);
-  height: 100%;
+#indexMainBg .row {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-bottom: 35px;
 }
 
-#bgMain .bgMainLayer .showMobile {
+#indexMainBg .showMobile {
   display: none;
 }
 
 @media screen and (max-width: 576px) {
-  #bgMain .bgMainLayer .showMobile {
+  #indexMainBg .showMobile {
     display: block;
   }
 }
 
 @media screen and (max-width: 576px) {
-  #bgMain .bgMainLayer .hideMobile {
+  #indexMainBg .hideMobile {
     display: none;
   }
 }
@@ -317,7 +318,7 @@ main {
 }
 
 #ourClients {
-  background-image: url("../img/200458.jpg");
+  background-image: url("../img/clientsbg.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-position-x: center;
@@ -393,6 +394,7 @@ main {
 }
 
 #mainSectionPricing {
+  margin-top: 50px;
   padding: 80px 20px;
 }
 
@@ -477,6 +479,48 @@ main {
           transform: translateY(4px);
   -webkit-box-shadow: 0.5px 0.5px 1px 0px #00000075;
           box-shadow: 0.5px 0.5px 1px 0px #00000075;
+}
+
+#aboutusMainbg {
+  background-image: url("../img/aboutusbg.jpg");
+  height: 75vh;
+  background-position-y: center;
+}
+
+#aboutusMainbg .row {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+#aboutusMainbg .row #aboutUsDownArrows {
+  color: #faaf5a;
+  text-align: center;
+  font-size: 2.5em;
+  position: relative;
+  bottom: 0px;
+  -webkit-animation-name: upDownAnimation;
+          animation-name: upDownAnimation;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes upDownAnimation {
+  50% {
+    bottom: -25px;
+  }
+}
+
+@keyframes upDownAnimation {
+  50% {
+    bottom: -25px;
+  }
+}
+
+#aboutUsHistorySection {
+  height: 100vh;
 }
 
 footer {
