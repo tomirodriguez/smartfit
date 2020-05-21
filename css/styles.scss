@@ -259,9 +259,7 @@ h4{
     background-position-x: center;
     padding: 0px;
 
-    @include propertiesForMaxWidth($mediumBreak, 
-        ("background-image": url("../img/200458.jpg"),
-        "background-attachment": scroll));
+    @include propertiesForMaxWidth($mediumBreak, ("background-attachment": scroll));
 
     .darkLayer{     
         padding: 80px 20px;
