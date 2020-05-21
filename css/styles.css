@@ -222,6 +222,12 @@ main {
   background-position-x: center;
 }
 
+@media screen and (max-width: 768px) {
+  .fullVhBgImage {
+    background-attachment: scroll;
+  }
+}
+
 .fullVhBgImage .bgDarkLayer {
   background-color: rgba(0, 0, 0, 0.3);
   height: 100%;
@@ -234,7 +240,6 @@ main {
 @media screen and (max-width: 768px) {
   #indexMainBg {
     background-image: url("../img/indexbgmobile.jpg");
-    background-attachment: scroll;
   }
 }
 
@@ -520,7 +525,40 @@ main {
 }
 
 #aboutUsHistorySection {
-  height: 100vh;
+  padding: 0px 30px;
+}
+
+#aboutUsHistorySection #aboutUsHistoryHeader {
+  padding: 50px 0;
+}
+
+#aboutUsHistorySection p {
+  text-align: justify;
+  padding: 10px 30px;
+}
+
+#aboutUsHistorySection .historyImg {
+  padding: 30px;
+  text-align: center;
+}
+
+#aboutUsHistorySection .historyImg img {
+  width: 100%;
+  padding: 5px;
+  border-radius: 2px;
+  border: 1px solid #8b8a8a;
+}
+
+#aboutUsHistorySection .historySecondImg {
+  padding: 30px;
+  text-align: center;
+}
+
+#aboutUsHistorySection .historySecondImg img {
+  width: 350px;
+  padding: 5px;
+  border-radius: 2px;
+  border: 1px solid #8b8a8a;
 }
 
 footer {

@@ -129,7 +129,11 @@ main{
     height: 100vh;
     background-attachment: fixed;
     background-size: cover;
-    background-position-x: center;
+    background-position-x: center;    
+
+    // Para mobile desactuva el attachment fixed para la compatibilidad con iOs
+    @include propertiesForMaxWidth($mediumBreak,
+        ("background-attachment": scroll));  
 
     .bgDarkLayer {
         background-color: rgba(0, 0, 0, 0.3);
@@ -142,8 +146,7 @@ main{
 
     // Para mobile carga una imagen mas liviana 
     @include propertiesForMaxWidth($mediumBreak,
-        ("background-image": url("../img/indexbgmobile.jpg"),
-        "background-attachment": scroll));  
+        ("background-image": url("../img/indexbgmobile.jpg")));  
 
     .row{        
         align-items: center;
@@ -369,7 +372,38 @@ main{
 }
 
 #aboutUsHistorySection {
-    height: 100vh;
+    padding: 0px 30px;
+
+    #aboutUsHistoryHeader{
+        padding: 50px 0;
+    }
+
+    p{
+        text-align: justify;
+        padding: 10px 30px;
+    }
+
+    .historyImg {
+        padding: 30px;
+        text-align: center;
+        img {
+            width: 100%;
+            padding: 5px;
+            border-radius: 2px;
+            border: 1px solid #8b8a8a;
+        }
+    }
+    
+    .historySecondImg{
+        padding: 30px;
+        text-align: center;
+        img {
+            width: 350px;
+            padding: 5px;
+            border-radius: 2px;
+            border: 1px solid #8b8a8a;
+        }
+    }
 }
 
 footer{
