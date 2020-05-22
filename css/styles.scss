@@ -44,6 +44,7 @@ $navBarHeight: 70px;
 
 body{
     font-family: 'Open Sans', sans-serif;
+    background-color: rgb(243, 243, 243);
 }
 
 main{
@@ -213,10 +214,11 @@ h4{
     #myCardsRow{
         margin: 20px 10px;
         .myCard{  
-            box-shadow: 5px 5px 20px 0px #00000075;
+            box-shadow: 0px 0px 5px 0px #00000075;
             border-radius: 10px;
             padding: 30px 20px;
             margin: 20px 0px;
+            background-color: white;
 
             display: flex;
             flex-direction: column;
@@ -225,6 +227,10 @@ h4{
             height: 300px;
             
             transition: all 0.3s;
+
+            &:hover{                
+                box-shadow: 5px 5px 20px 0px #00000075;
+            }
 
             &Ico{      
                 i{
@@ -330,6 +336,7 @@ h4{
             border-radius: 10px;
             padding: 30px 20px;
             margin: 20px 0px;
+            background-color: white;
 
             .pricingCardTitle{
                 font-size: 2.5em;
