@@ -203,8 +203,18 @@ h4 strong {
   background-color: #292C2C !important;
   -webkit-box-shadow: 0px 10px 10px 0px #00000075;
           box-shadow: 0px 10px 10px 0px #00000075;
-  padding: 2vh 5%;
   height: 70px;
+}
+
+@media screen and (max-width: 768px) {
+  #myNavBarStyle {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+#myNavBarStyle .brandLogo {
+  padding-left: 30px;
 }
 
 #myNavBarStyle a {
@@ -212,12 +222,21 @@ h4 strong {
 }
 
 #myNavBarStyle .nav-item {
-  margin: 0 1.3vw;
+  margin: 0 2.2vw;
+  background-color: #292C2C !important;
 }
 
 @media screen and (min-width: 1440px) {
   #myNavBarStyle .nav-item {
-    margin: 0 3vw;
+    margin: 0 4vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #myNavBarStyle .nav-item {
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
   }
 }
 
@@ -228,6 +247,7 @@ h4 strong {
 #myNavBarStyle #demoItem {
   background-color: #fda23b;
   padding: 0 10px;
+  margin-right: 30px;
   border-radius: 20px;
   -webkit-box-shadow: 5px 5px 5px 0px #00000075;
           box-shadow: 5px 5px 5px 0px #00000075;
@@ -580,6 +600,37 @@ h4 strong {
   padding: 5px;
   border-radius: 2px;
   border: 1px solid #8b8a8a;
+}
+
+#mainSectionContact {
+  margin-top: 50px;
+  padding: 80px 20px;
+}
+
+#mainSectionContact .row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#mainSectionContact #locationInfo {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#mainSectionContact #locationInfo p {
+  text-align: left;
+}
+
+#mainSectionContact #mapContainer {
+  padding: 50px 30px;
+}
+
+#mainSectionContact #map {
+  width: 100%;
+  height: 300px;
+  padding: 50px;
 }
 
 footer {

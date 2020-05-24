@@ -44,117 +44,38 @@
         </nav>
     </header>
 
-    <main id="bgMain" class="container-fluid">
-        <section class="row bgMainLayer">
-            <div class="col-12 col-sm-9 offset-sm-3 col-md-8 offset-md-4 col-lg-7 offset-lg-5" >
-                <div>
-                    <h1><p class="letterSpace">GET <strong>STRONGER</strong></p>
-                        <p>TRAIN <strong>SMARTER</strong></p>
-                    </h1>
-                    <div class="hideMobile">
-                        <h2><p>Llevá tu <strong>entrenamiento</strong> a un nuevo nivel</p></h2>
-                    </div>
-                    <div class="showMobile"><h2><p>Llevá tu <strong>entrenamiento</strong></p><p> a un nuevo nivel</p></h2></div>
-                </div>
+    <main id="mainSectionContact" class="container-fluid">
+        <div class="row">
+            <div class="col-12">                
+                <h3>Veni a nuestro centro de entrenamiento</h3>
             </div>
-        </section>
+            <div class="col-12">                
+                <h4>Podemos mostrarte como usamos <strong>Smart Fit</strong> con nuestros propios atletas</h4>
+            </div>
+            <div id="mapContainer" class="col-12 col-md-6">                
+                <div id="map"></div>
+            </div>
+            <div id="locationInfo" class="col-12 col-md-6">                
+                <p>Calle falsa 123</p>
+                <p>Florida, Buenos Aires</p>
+                <p>Tel. 1234-5678</p>
+                <p>Mail. centroentrenamiento@smartfit.com</p>
+            </div>
+        </div>
     </main>
 
-    <!-- ===================================================    -->
-    <!-- ===================================================    -->
-    <!-- CARTAS -->
-    <!-- ===================================================    -->
-    <!-- ===================================================    -->
-
-    <section id="mainFeaturesCards" class="container-fluid">
-        
-        <div class="row">
-            <article class="col-12">
-                <h3>Entrenamiento Inteligente</h3>
-                <h4>Analizá toda la información de tu atleta para aprovechar al máximo cada entrenamiento</h4>
-            </article>
-        </div>
-        <div id="myCardsRow" class="row">
-            <div class="col-12 col-md-4">
-                <div class="myCard">
-                    <div class="myCardIco">
-                        <i class="fas fa-pencil-ruler"></i>
-                    </div>
-                    <div class="myCardTittle">
-                        <p>Testeos de rendimiento</p>
-                    </div>
-                    <div class="myCardDesc">                        
-                        <p>Tests avalados cientificamente para distintas capacidades.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12 col-md-4">
-                <div class="myCard">
-                    <div class="myCardIco">
-                        <i class="far fa-comments"></i>
-                    </div>
-                    <div class="myCardTittle">
-                        <p>Comunicación constante</p>
-                    </div>
-                    <div class="myCardDesc">                        
-                        <p>Mantenete informado de lo que sucede con tu atleta.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12 col-md-4">
-                <div class="myCard">
-                    <div class="myCardIco">
-                        <i class="fas fa-chalkboard-teacher"></i>
-                    </div>
-                    <div class="myCardTittle">
-                        <p>Planificación personalizada</p>
-                    </div>
-                    <div class="myCardDesc">                        
-                        <p>Arma el entrenamiento indicado para cada persona.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-    <!-- ===================================================    -->
-    <!-- ===================================================    -->
-    <!-- Clientes -->
-    <!-- ===================================================    -->
-    <!-- ===================================================    -->
-
-    <section id="ourClients" class="container-fluid">
-        <div class="darkLayer">
-            <div class="row">
-                <article class="col-12">
-                    <h3>Sumate a la comunidad Smart</h3>
-                    <h4>Más de 5.000 atletas ya están entrenando con nosotros.</h4>
-                </article>
-            </div>
-            <div id="clientsLogosRow" class="row">
-                <div class="col-12 col-md-3 clientView">              
-                    <a href="https://www.alumni.com.ar/" target="blank"><img src="img/alumni-rugby.png" alt="" class="clientLogo"></a>               
-                    <div class="clientName"><p>Asociación Alumni</p></div>                 
-                </div>
-                <div class="col-12 col-md-3 clientView">
-                    <a href="https://geba.org.ar/2/" target="blank"><img src="img/geba.png" alt="" class="clientLogo"></a>
-                    <div class="clientName"><p>Gimnasia y Esgrima de Buenos Aires</p></div>
-                </div>
-                <div class="col-12 col-md-3 clientView">  
-                    <a href="https://www.instagram.com/clubderugbyalacranes/" target="blank"><img src="img/alacranes.png" alt="" class="clientLogo"> </a>              
-                    <div class="clientName"><p>Club de Rugby Alacranes (Chile)</p></div>             
-                </div>
-                <div class="col-12 col-md-3 clientView">
-                    <a href="http://www.clubuniversitario.org.ar/sedes/gonnet" target="blank"><img src="img/culp.png" alt="" class="clientLogo"></a>
-                    <div class="clientName"><p>Club Universitario de La Plata</p></div>
-                </div>
-            </div>
-        </div>    
-    </section>
+    <script>
+        // Initialize and add the map
+        function initMap() {
+          // The location of Uluru , 
+          var uluru = {lat: -54.379340, lng: -36.797560};
+          // The map, centered at Uluru
+          var map = new google.maps.Map(
+              document.getElementById('map'), {zoom: 10, center: uluru});
+          // The marker, positioned at Uluru
+          var marker = new google.maps.Marker({position: uluru, map: map});
+        }
+            </script>
 
     
     <!-- ===================================================    -->
@@ -189,6 +110,9 @@
         </div>
     </footer>
 
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?AIzaSyCXvtFrcxcWcxYbiN6cyIUa34vQjiUKVPA&callback=initMap">
+    </script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
