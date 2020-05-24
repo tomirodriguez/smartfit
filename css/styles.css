@@ -206,7 +206,7 @@ h4 strong {
   height: 70px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1440px) {
   #myNavBarStyle {
     padding-left: 0px;
     padding-right: 0px;
@@ -232,7 +232,7 @@ h4 strong {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 990px) {
   #myNavBarStyle .nav-item {
     text-align: center;
     padding: 0px;
@@ -269,7 +269,7 @@ h4 strong {
   background-position-x: center;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 990px) {
   .fullVhBgImage {
     background-attachment: scroll;
   }
@@ -284,7 +284,7 @@ h4 strong {
   background-image: url("../img/indexbg.jpg");
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 990px) {
   #indexMainBg {
     background-image: url("../img/indexbgmobile.jpg");
   }
@@ -388,7 +388,7 @@ h4 strong {
   padding: 0px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 990px) {
   #ourClients {
     background-attachment: scroll;
   }
@@ -432,7 +432,7 @@ h4 strong {
           justify-content: end;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 990px) {
   #ourClients #clientsLogosRow .clientView {
     margin: 30px 0;
     padding: 20px 0;

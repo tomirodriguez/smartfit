@@ -1,7 +1,7 @@
 $secondaryColor: #faaf5a;
 $primaryColor: #292C2C;
 $smallBreak: 576px;
-$mediumBreak: 768px;
+$mediumBreak: 990px;
 $largeBreak: 1440px;
 $navBarHeight: 70px;
 
@@ -118,7 +118,7 @@ h4{
     box-shadow: 0px 10px 10px 0px #00000075;
     height: $navBarHeight;
 
-    @include propertiesForMaxWidth($mediumBreak,(  
+    @include propertiesForMaxWidth($largeBreak,(  
         "padding-left": 0px,
         "padding-right": 0px
     ) );
