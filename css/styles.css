@@ -279,7 +279,7 @@ h4 strong {
   }
 }
 
-.fullVhBgImage .bgDarkLayer {
+.bgDarkLayer {
   background-color: rgba(0, 0, 0, 0.3);
   height: 100%;
 }
@@ -457,6 +457,39 @@ h4 strong {
 
 #ourClients #clientsLogosRow .clientView .clientName p {
   color: white;
+}
+
+#appInfoMainBg {
+  background-image: url("../img/appbg.jpg");
+}
+
+@media screen and (max-width: 990px) {
+  #appInfoMainBg {
+    background-image: url("../img/appbgmobile.jpg");
+  }
+}
+
+#appInfoMainBg .row {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-bottom: 30px;
+}
+
+#appInfoMainBg .showMobile {
+  display: none;
+}
+
+@media screen and (max-width: 576px) {
+  #appInfoMainBg .showMobile {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #appInfoMainBg .hideMobile {
+    display: none;
+  }
 }
 
 #mainSectionPricing {

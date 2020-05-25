@@ -190,11 +190,11 @@ h4{
     // Para mobile desactiva el attachment fixed para la compatibilidad con iOs
     @include propertiesForMaxWidth($mediumBreak,
         ("background-attachment": scroll));  
+}
 
-    .bgDarkLayer {
-        background-color: rgba(0, 0, 0, 0.3);
-        height: 100%;
-    }
+.bgDarkLayer {
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 100%;
 }
 
 #indexMainBg{
@@ -333,6 +333,34 @@ h4{
                 }      
             }
         }
+    }
+}
+
+///////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////
+// Propiedades de Nuestra app
+///////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////
+
+#appInfoMainBg{
+    background-image: url("../img/appbg.jpg");
+
+    // Para mobile carga una imagen mas liviana 
+    @include propertiesForMaxWidth($mediumBreak,
+        ("background-image": url("../img/appbgmobile.jpg")));  
+
+    .row{        
+        align-items: flex-end;
+        padding-bottom: 30px;
+    }      
+        
+    .showMobile{
+        display: none;
+        @include propertiesForMaxWidth($smallBreak, ("display": block))
+    }
+
+    .hideMobile {
+        @include propertiesForMaxWidth($smallBreak, ("display": none))
     }
 }
 
