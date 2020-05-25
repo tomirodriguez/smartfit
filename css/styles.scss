@@ -346,8 +346,8 @@ h4{
     background-image: url("../img/appbg.jpg");
 
     // Para mobile carga una imagen mas liviana 
-    @include propertiesForMaxWidth($mediumBreak,
-        ("background-image": url("../img/appbgmobile.jpg")));  
+    @include propertiesForMaxWidth($smallBreak,
+        ("background-image": url("../img/appbgmobile.png")));  
 
     .row{        
         align-items: flex-end;
@@ -454,15 +454,12 @@ h4{
 
 #aboutusMainbg{
     background-image: url("../img/aboutusbg.jpg");
-    height: 75vh;
+    height: 100vh;
     background-position-y: center;
 
     .row{
         align-items: flex-end;
-
-        #aboutUsDownArrows{
-            bottom: 0px;
-        }
+        padding-bottom: 30px;
     }
 }
 

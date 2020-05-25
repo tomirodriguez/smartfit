@@ -463,9 +463,9 @@ h4 strong {
   background-image: url("../img/appbg.jpg");
 }
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 576px) {
   #appInfoMainBg {
-    background-image: url("../img/appbgmobile.jpg");
+    background-image: url("../img/appbgmobile.png");
   }
 }
 
@@ -583,7 +583,7 @@ h4 strong {
 
 #aboutusMainbg {
   background-image: url("../img/aboutusbg.jpg");
-  height: 75vh;
+  height: 100vh;
   background-position-y: center;
 }
 
@@ -591,10 +591,7 @@ h4 strong {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-}
-
-#aboutusMainbg .row #aboutUsDownArrows {
-  bottom: 0px;
+  padding-bottom: 30px;
 }
 
 #aboutUsHistorySection {
