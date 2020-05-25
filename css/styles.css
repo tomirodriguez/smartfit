@@ -502,7 +502,7 @@ h4 strong {
 }
 
 #appInfoSection #appInfoSectionTittle {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 #appInfoSection .row {
@@ -513,11 +513,11 @@ h4 strong {
 }
 
 #appInfoSection .row .appInfoImg {
-  margin: 20px 0;
+  margin: 40px 0;
 }
 
 #appInfoSection .row .appInfoData {
-  margin: 20px 0;
+  margin: 40px 0;
 }
 
 #appInfoSection .row p {
