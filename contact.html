@@ -44,7 +44,7 @@
         </nav>
     </header>
 
-    <main id="mainSectionContact" class="container-fluid">
+    <main id="mainSectionContact" class="container">
         <div class="row">
             <div class="col-12">                
                 <h3>Veni a nuestro centro de entrenamiento</h3>
@@ -52,15 +52,45 @@
             <div class="col-12">                
                 <h4>Podemos mostrarte como usamos <strong>Smart Fit</strong> con nuestros propios atletas</h4>
             </div>
-            <div id="mapContainer" class="col-12 col-md-6">                
+
+            <div id="contactForm" class="col-12 col-md-6">
+                <h4 class="mb-3">Dejanos tu mensaje</h4>                
+                <form>
+                    <div class="form-group">
+                      <label for="exampleFormControlInput1">Email de contacto</label>
+                      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleFormControlSelect1">Motivo de contacto</label>
+                      <select class="form-control" id="exampleFormControlSelect1">
+                        <option>Pedir información</option>
+                        <option>Arreglar visita</option>
+                        <option>Sugerencias</option>
+                        <option>Problemas</option>
+                        <option>Otros</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleFormControlTextarea1">Mensaje</label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="7"></textarea>
+                    </div>
+                    <div id="contactButtonContainer">
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </div>
+                </form>
+            </div> 
+
+
+            <div id="mapContainer" class="col-12 col-md-6">
+                <h4 class="mb-3">Centro ARD Smart</h4>                 
                 <div id="map"></div>
-            </div>
-            <div id="locationInfo" class="col-12 col-md-6">                
-                <p>Calle falsa 123</p>
-                <p>Florida, Buenos Aires</p>
-                <p>Tel. 1234-5678</p>
-                <p>Mail. centroentrenamiento@smartfit.com</p>
-            </div>
+                <div id="locationInfo">                
+                    <p>Calle falsa 123</p>
+                    <p>Florida, Buenos Aires</p>
+                    <p>Tel. 1234-5678</p>
+                    <p>Mail. centroentrenamiento@smartfit.com</p>
+                </div>
+            </div> 
         </div>
     </main>
 

@@ -123,6 +123,10 @@ h4{
         "padding-right": 0px
     ) );
 
+    .navbar-toggler{
+        margin-right: 20px;
+    }
+    
     .brandLogo{
         padding-left: 30px;
     }
@@ -142,11 +146,6 @@ h4{
         }
 
         @include propertiesForMaxWidth($mediumBreak, (
-            // "z-index":100,
-            // "height":100vh,
-            // "position":absolute,
-            // "top":0,
-            // "left":0,
             "text-align":center,
             "padding":0px,
             "margin":0px
@@ -188,7 +187,7 @@ h4{
     background-size: cover;
     background-position-x: center;    
 
-    // Para mobile desactuva el attachment fixed para la compatibilidad con iOs
+    // Para mobile desactiva el attachment fixed para la compatibilidad con iOs
     @include propertiesForMaxWidth($mediumBreak,
         ("background-attachment": scroll));  
 
@@ -491,27 +490,52 @@ h4{
     margin-top: 50px;
     padding: 80px 20px;
 
-    .row{
-        align-items: center;
-    }
     #locationInfo{
-        // padding-top: 50px;
-        // display: flex;
-        // flex-direction: column;
-        align-items: center;
+        margin-top: 20px;
         p {
-            text-align: left;
+            text-align: center;
         }
     }
     
-    #mapContainer{        
-        padding: 50px 30px;
+    #mapContainer{  
+        margin-top: 50px; 
+        
+
+        #map{
+            width: 100%;
+            height: 300px;
+        }
+        h4{
+            padding-bottom: 20px;
+        }
     }
 
-    #map{
-        width: 100%;
-        height: 300px;
-        padding: 50px;
+    #contactForm{
+        margin-top: 50px;
+
+        h4{
+            padding-bottom: 20px;
+        }
+
+        #contactButtonContainer{
+            display: flex;
+            justify-content: center;
+
+            button{
+                background-color: #fda23b;
+                border: none;
+                text-align: center;
+                padding: 5px 15px;
+                border-radius: 10px;
+                box-shadow: 5px 5px 5px 0px #00000075;
+                transition: all 0.3s;
+        
+                &:hover{
+                    transform: translateY(4px);
+                    box-shadow: 1px 1px 1px 0px #00000075;
+                }
+            }
+        }
     }
 }  
 
