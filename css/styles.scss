@@ -88,6 +88,10 @@ h3{
     font-weight: 900;
     text-align: center;
     color: $primaryColor;
+
+    strong{
+        color: $secondaryColor;
+    }
 }
 
 h4{
@@ -361,6 +365,29 @@ h4{
 
     .hideMobile {
         @include propertiesForMaxWidth($smallBreak, ("display": none))
+    }
+}
+
+#appInfoSection{
+    margin-top: 80px;
+    margin-bottom: 80px;
+
+    #appInfoSectionTittle{
+        margin-bottom: 50px;
+    }
+
+    .row{
+        margin: 30px 0;
+        align-items: center;
+
+        p{
+            text-align: justify;
+            margin: 15px 0;
+        }
+    }
+
+    #appInforExcersiceImg {
+        width: 100%;
     }
 }
 
