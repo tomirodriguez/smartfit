@@ -140,7 +140,6 @@ main {
 
 h1 {
   font-size: 4em;
-  font-weight: 700;
   text-align: center;
   text-shadow: 0px 0px 10px black;
 }
@@ -148,6 +147,7 @@ h1 {
 h1 p {
   font-family: 'Oswald', sans-serif;
   color: white;
+  font-weight: 700;
 }
 
 h1 .letterSpace {
@@ -197,22 +197,36 @@ h4 strong {
   color: #faaf5a;
 }
 
-.fullVhBgImage {
+.fullVhBgImageWithDarkLayer {
   height: 100vh;
   background-attachment: fixed;
   background-size: cover;
   background-position-x: center;
+  position: relative;
+}
+
+.fullVhBgImageWithDarkLayer:before {
+  content: '';
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.fullVhBgImageWithDarkLayer .row {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-bottom: 50px;
+  height: 100%;
 }
 
 @media screen and (max-width: 990px) {
-  .fullVhBgImage {
+  .fullVhBgImageWithDarkLayer {
     background-attachment: scroll;
   }
-}
-
-.bgDarkLayer {
-  background-color: rgba(0, 0, 0, 0.3);
-  height: 100%;
 }
 
 .brandLogo {
@@ -290,18 +304,13 @@ h4 strong {
 
 #indexMainBg {
   background-image: url("../img/indexbg.jpg");
+  background-position-y: 80%;
 }
 
 @media screen and (max-width: 990px) {
   #indexMainBg {
     background-image: url("../img/indexbgmobile.jpg");
   }
-}
-
-#indexMainBg .row {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 #indexMainBg .showMobile {
@@ -318,11 +327,6 @@ h4 strong {
   #indexMainBg .hideMobile {
     display: none;
   }
-}
-
-#indexMainBg #indexDownArrows {
-  bottom: 0px;
-  right: -50%;
 }
 
 #mainFeaturesCards {
@@ -473,13 +477,6 @@ h4 strong {
   }
 }
 
-#appInfoMainBg .row {
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  padding-bottom: 50px;
-}
-
 #appInfoMainBg .showMobile {
   display: none;
 }
@@ -620,15 +617,7 @@ h4 strong {
 
 #aboutusMainbg {
   background-image: url("../img/aboutusbg.jpg");
-  height: 100vh;
-  background-position-y: center;
-}
-
-#aboutusMainbg .row {
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  padding-bottom: 50px;
+  background-position-x: 30%;
 }
 
 #aboutUsHistorySection {

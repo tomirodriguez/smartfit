@@ -53,12 +53,13 @@ main{
 
 h1{
     font-size: 4em;
-    font-weight: 700;
     text-align: center;
     text-shadow: 0px 0px 10px black;
+    
     p{
         font-family: 'Oswald', sans-serif;
         color: white;
+        font-weight: 700;
     }    
     .letterSpace{
         letter-spacing: 3px;
@@ -105,20 +106,48 @@ h4{
     }
 }
 
-.fullVhBgImage {
+// .fullVhBgImage {
+//     height: 100vh;
+//     background-attachment: fixed;
+//     background-size: cover;
+//     background-position-x: center;    
+
+//     // Para mobile desactiva el attachment fixed para la compatibilidad con iOs
+//     @include propertiesForMaxWidth($mediumBreak,
+//         ("background-attachment": scroll));  
+// }
+
+// .bgDarkLayer {
+//     background-color: rgba(0, 0, 0, 0.3);
+//     height: 100%;
+// }
+
+.fullVhBgImageWithDarkLayer {
     height: 100vh;
     background-attachment: fixed;
     background-size: cover;
-    background-position-x: center;    
+    background-position-x: center;
+    position: relative;   
+    
+    &:before{
+        content:'';
+        background-color: rgba(0, 0, 0, 0.3);
+        height: 100%;     
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;   
+    }
+
+    .row{
+        align-items: flex-end;
+        padding-bottom: 50px;
+        height: 100%;
+    }
 
     // Para mobile desactiva el attachment fixed para la compatibilidad con iOs
     @include propertiesForMaxWidth($mediumBreak,
-        ("background-attachment": scroll));  
-}
-
-.bgDarkLayer {
-    background-color: rgba(0, 0, 0, 0.3);
-    height: 100%;
+        ("background-attachment": scroll));
 }
 
 
@@ -206,14 +235,11 @@ h4{
 
 #indexMainBg{
     background-image: url("../img/indexbg.jpg");
+    background-position-y: 80%;
 
     // Para mobile carga una imagen mas liviana 
     @include propertiesForMaxWidth($mediumBreak,
-        ("background-image": url("../img/indexbgmobile.jpg")));  
-
-    .row{        
-        align-items: center;
-    }      
+        ("background-image": url("../img/indexbgmobile.jpg")));       
         
     .showMobile{
         display: none;
@@ -222,11 +248,6 @@ h4{
 
     .hideMobile {
         @include propertiesForMaxWidth($smallBreak, ("display": none))
-    }
-
-    #indexDownArrows{
-        bottom: 0px;
-        right: -50%;
     }
 }
 
@@ -354,12 +375,7 @@ h4{
 
     // Para mobile carga una imagen mas liviana 
     @include propertiesForMaxWidth($smallBreak,
-        ("background-image": url("../img/appbgmobile.jpg")));  
-
-    .row{        
-        align-items: flex-end;
-        padding-bottom: 50px;
-    }      
+        ("background-image": url("../img/appbgmobile.jpg")));    
         
     .showMobile{
         display: none;
@@ -496,13 +512,7 @@ h4{
 
 #aboutusMainbg{
     background-image: url("../img/aboutusbg.jpg");
-    height: 100vh;
-    background-position-y: center;
-
-    .row{
-        align-items: flex-end;
-        padding-bottom: 50px;
-    }
+    background-position-x: 30%;
 }
 
 #aboutUsHistorySection {
