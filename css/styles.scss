@@ -218,12 +218,8 @@ h4{
 
 
 #indexMainBg{
-    background-image: url("../img/indexbg.jpg");
-    background-position-y: 80%;
-
-    // Para mobile carga una imagen mas liviana 
-    @include propertiesForMaxWidth($mediumBreak,
-        ("background-image": url("../img/indexbgmobile.jpg")));       
+    background-image: url("../img/7443.jpg");
+    background-position-y: -15%;   
         
     .showMobile{
         display: none;

@@ -303,14 +303,8 @@ h4 strong {
 }
 
 #indexMainBg {
-  background-image: url("../img/indexbg.jpg");
-  background-position-y: 80%;
-}
-
-@media screen and (max-width: 990px) {
-  #indexMainBg {
-    background-image: url("../img/indexbgmobile.jpg");
-  }
+  background-image: url("../img/7443.jpg");
+  background-position-y: -15%;
 }
 
 #indexMainBg .showMobile {
