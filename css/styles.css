@@ -731,6 +731,11 @@ footer {
   color: white;
 }
 
+footer .brandLogo a {
+  text-decoration: none;
+  color: white;
+}
+
 footer #footerMobileDownload p {
   font-size: 1em;
 }

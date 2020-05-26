@@ -610,6 +610,14 @@ footer{
     padding: 30px 0px;
     color: white; 
 
+    
+    .brandLogo {
+        a{
+            text-decoration: none;
+            color: white;
+        }
+    }
+
     #footer{
         &MobileDownload {
             p{
