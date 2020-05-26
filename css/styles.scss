@@ -27,17 +27,6 @@ $navBarHeight: 70px;
 ///////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////
 
-.downArrowIcon{
-    color: $secondaryColor;
-    text-align: center;
-    font-size:2.5em;
-    position: relative;
-    bottom: 0px;
-    animation-name: upDownAnimation;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-}
-
 *{
     scroll-behavior: smooth;
 }
@@ -106,22 +95,6 @@ h4{
     }
 }
 
-// .fullVhBgImage {
-//     height: 100vh;
-//     background-attachment: fixed;
-//     background-size: cover;
-//     background-position-x: center;    
-
-//     // Para mobile desactiva el attachment fixed para la compatibilidad con iOs
-//     @include propertiesForMaxWidth($mediumBreak,
-//         ("background-attachment": scroll));  
-// }
-
-// .bgDarkLayer {
-//     background-color: rgba(0, 0, 0, 0.3);
-//     height: 100%;
-// }
-
 .fullVhBgImageWithDarkLayer {
     height: 100vh;
     background-attachment: fixed;
@@ -148,6 +121,17 @@ h4{
     // Para mobile desactiva el attachment fixed para la compatibilidad con iOs
     @include propertiesForMaxWidth($mediumBreak,
         ("background-attachment": scroll));
+}
+
+.downArrowIcon{
+    color: $secondaryColor;
+    text-align: center;
+    font-size:2.5em;
+    position: relative;
+    bottom: 0px;
+    animation-name: upDownAnimation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
 }
 
 
