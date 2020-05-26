@@ -469,7 +469,7 @@ h4 strong {
 
 @media screen and (max-width: 576px) {
   #appInfoMainBg {
-    background-image: url("../img/appbgmobile.png");
+    background-image: url("../img/appbgmobile.jpg");
   }
 }
 
