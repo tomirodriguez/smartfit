@@ -354,7 +354,7 @@ h4{
 
     // Para mobile carga una imagen mas liviana 
     @include propertiesForMaxWidth($smallBreak,
-        ("background-image": url("../img/appbgmobile.png")));  
+        ("background-image": url("../img/appbgmobile.jpg")));  
 
     .row{        
         align-items: flex-end;
