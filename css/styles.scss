@@ -105,11 +105,29 @@ h4{
     }
 }
 
+.fullVhBgImage {
+    height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position-x: center;    
+
+    // Para mobile desactiva el attachment fixed para la compatibilidad con iOs
+    @include propertiesForMaxWidth($mediumBreak,
+        ("background-attachment": scroll));  
+}
+
+.bgDarkLayer {
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 100%;
+}
+
+
 ///////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////
 // Propiedades de la barra de navegacion
 ///////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////
+
 
 .brandLogo{    
     font-family: 'Permanent Marker', cursive;
@@ -185,21 +203,6 @@ h4{
 ///////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////
 
-.fullVhBgImage {
-    height: 100vh;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position-x: center;    
-
-    // Para mobile desactiva el attachment fixed para la compatibilidad con iOs
-    @include propertiesForMaxWidth($mediumBreak,
-        ("background-attachment": scroll));  
-}
-
-.bgDarkLayer {
-    background-color: rgba(0, 0, 0, 0.3);
-    height: 100%;
-}
 
 #indexMainBg{
     background-image: url("../img/indexbg.jpg");
@@ -228,7 +231,7 @@ h4{
 }
 
 #mainFeaturesCards{
-    padding: 80px 20px;
+    padding: 80px 0;
     
     h3, h4{
         padding-bottom: 20px;
@@ -238,7 +241,7 @@ h4{
     }
 
     #myCardsRow{
-        margin: 20px 10px;
+        margin: 20px 0px;
         .myCard{  
             box-shadow: 0px 0px 5px 0px #00000075;
             border-radius: 10px;
@@ -652,5 +655,30 @@ footer{
         &Copyright p{
             font-size: 0.8em;
         }
+    }
+}
+
+///////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////
+// Propiedades de la pagina 404
+///////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////
+
+#section404{
+    .row{
+        margin: 80px 0;
+    }
+    #errorInformation{
+        text-align: center;
+        padding: 5px 0;
+    }
+    #errorTittle{
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    #errorSubTittle{
+        font-size: 2rem;
+        text-align: center;
     }
 }

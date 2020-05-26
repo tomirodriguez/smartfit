@@ -197,6 +197,24 @@ h4 strong {
   color: #faaf5a;
 }
 
+.fullVhBgImage {
+  height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position-x: center;
+}
+
+@media screen and (max-width: 990px) {
+  .fullVhBgImage {
+    background-attachment: scroll;
+  }
+}
+
+.bgDarkLayer {
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100%;
+}
+
 .brandLogo {
   font-family: 'Permanent Marker', cursive;
   font-weight: 400;
@@ -270,24 +288,6 @@ h4 strong {
           box-shadow: 1px 1px 1px 0px #00000075;
 }
 
-.fullVhBgImage {
-  height: 100vh;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position-x: center;
-}
-
-@media screen and (max-width: 990px) {
-  .fullVhBgImage {
-    background-attachment: scroll;
-  }
-}
-
-.bgDarkLayer {
-  background-color: rgba(0, 0, 0, 0.3);
-  height: 100%;
-}
-
 #indexMainBg {
   background-image: url("../img/indexbg.jpg");
 }
@@ -326,7 +326,7 @@ h4 strong {
 }
 
 #mainFeaturesCards {
-  padding: 80px 20px;
+  padding: 80px 0;
 }
 
 #mainFeaturesCards h3, #mainFeaturesCards h4 {
@@ -340,7 +340,7 @@ h4 strong {
 }
 
 #mainFeaturesCards #myCardsRow {
-  margin: 20px 10px;
+  margin: 20px 0px;
 }
 
 #mainFeaturesCards #myCardsRow .myCard {
@@ -781,5 +781,24 @@ footer #footerSocialMedia ul li:hover i {
 
 footer #footerCopyright p {
   font-size: 0.8em;
+}
+
+#section404 .row {
+  margin: 80px 0;
+}
+
+#section404 #errorInformation {
+  text-align: center;
+  padding: 5px 0;
+}
+
+#section404 #errorTittle {
+  font-size: 3rem;
+  text-align: center;
+}
+
+#section404 #errorSubTittle {
+  font-size: 2rem;
+  text-align: center;
 }
 /*# sourceMappingURL=styles.css.map */
